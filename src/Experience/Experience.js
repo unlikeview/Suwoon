@@ -19,6 +19,9 @@ export default class Experience
 {
     constructor(canvas)
     {
+
+        this.name = ['mobile','yonghodang']
+
         if(instance)
         {
             return instance;
@@ -41,7 +44,7 @@ export default class Experience
         
         this.camera = new Camera();
         this.renderer = new Renderer();
-        this.world = new World();
+        this.world = new World(this.name[0]);
         this.raycaster = new Raycaster();
         window.addEventListener('click',this.raycaster.clickRay);
         window.addEventListener('mousemove',this.raycaster.hoverRay);
@@ -126,6 +129,7 @@ export default class Experience
     newSetup()
     {
         this.resources = new Resources(sources_2);
+        this.world = new World(this.name[1]);
         this.scene.add(this.resources.overlay)
     }
 }

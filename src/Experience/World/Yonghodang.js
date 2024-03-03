@@ -19,7 +19,7 @@ export default class Yonghodang
 
         this.resource = this.resources.items.yonghodang;
 
-        //this.setModel();
+        this.setModel();
         //this.setAnimation();
     }
 
@@ -36,9 +36,9 @@ export default class Yonghodang
         // this.model.rotation.y = -(Math.PI/2)
 
         this.scene.add(this.group)
-        this.group.scale.set(8,8,8);
-        this.group.position.set(0,5,0);
-        this.group.rotation.y = -(Math.PI/2)
+        this.group.scale.set(1,1,1);
+        this.group.position.set(0,0,-1);
+        //this.group.rotation.y = -(Math.PI/2)
 
         this.model.traverse((child) =>
         {

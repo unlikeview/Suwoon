@@ -49,7 +49,7 @@ export default class Environment
 
         this.scene.environment = this.environmentMap.texture
         this.scene.background = this.environmentMap.texture //실질적으로 이미지 사진을 담는 구간 
-        this.scene.backgroundBlurriness = 0.1;
+        //this.scene.backgroundBlurriness = 0.1;
 
         this.environmentMap.updateMaterials = ()=>
         {
